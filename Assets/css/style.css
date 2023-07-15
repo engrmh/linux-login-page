@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.backGroundImage{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    filter: blur(5px);
+}
+.warpper{
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.warpper i{
+    color: #fff;
+    font-size: 5rem;
+    margin-bottom: 1rem;
+}
+.title{
+    color: #fff;
+    margin-bottom: 1rem;
+}
+.field{
+    display: flex;
+    flex-direction: column;
+}
+#emailField{
+    border: none;
+    height: 1rem;
+    width: 12rem;
+    margin-bottom: 1rem;
+    background-color:#fff;
+    border-radius: 5px;
+    padding: 1rem .5rem;
+}
+#passwordField{
+    border: none;
+    height: 1rem;
+    width: 12rem;
+    background-color:#fff;
+    border-radius: 5px;
+    padding: 1rem .5rem;
+}
+.forget:link,
+.forget:visited{
+    color: #fff;
+    text-decoration: none;
+    margin-top: .5rem;
+}
+.button{
+    display: flex;
+}
+.loginButton{
+    border: none;
+    margin-top: 1rem;
+    padding: .5rem;
+    width: 12rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.loginButton:hover{
+    color: #fff;
+    background-color: #999;
+}
+input{
+    transition: all 0.4ms ease-in-out;
+}
+input:focus{
+    transform: scale(1.1);
+}
